@@ -1,0 +1,31 @@
+.logo {
+    background-color: black;
+    min-height: 200px;
+}
+
+.heading {
+    background-color: grey;
+}
+
+.navigation {
+    background-color: orange;
+}
+
+.information {
+    background-color: lightgrey;
+}
+
+.colour1 {
+    background-color: blue;
+    min-height: 60px;
+}
+
+.colour2{
+    background-color: yellow;
+    min-height: 60px;
+}
+
+.colour3 {
+    background-color: green;
+    min-height: 60px;
+}
