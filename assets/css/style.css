@@ -1,6 +1,6 @@
 .logo {
     background-color: black;
-    min-height: 200px;
+    color: white;  /*text color*/
 }
 
 .heading {
@@ -17,15 +17,13 @@
 
 .colour1 {
     background-color: blue;
-    min-height: 60px;
 }
 
 .colour2{
     background-color: yellow;
-    min-height: 60px;
 }
 
 .colour3 {
     background-color: green;
-    min-height: 60px;
+
 }
