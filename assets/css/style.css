@@ -1,6 +1,11 @@
 .logo {
+    background: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 100px;
     background-color: black;
-    color: white;  /*text color*/
+
 }
 
 .heading {
