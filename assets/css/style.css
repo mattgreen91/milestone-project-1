@@ -55,13 +55,13 @@
 .font-subheading {
     font-family: "Amatic SC", sans-serif;
     font-size: 42px;
-    text-align: right;
+    text-align: center;
 }
 
 .font-text {
     font-family: "Indie Flower", sans-serif;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
 }
 
 /* font colours */
@@ -74,44 +74,25 @@
     color: black;
 }
 
-/* subtitle formatting */
+/* padding space top and bottom for all text and icons */
 
-h1 {
+h1, p, .navigation, .social-media {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-/* main section formatting */
-
-p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/* logo formatting */
+/* logo sizing and alignment */
 
 .logo {
     background: url("../images/logo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    min-height: 100px;
+    min-height: 80px;
     background-color: black;
 }
 
-/* navigation formatting */
-
-.navigation {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 /* icon formatting in social media section */
-
-.social-media {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 .social-media a {
     width: 50px;
@@ -142,9 +123,9 @@ p {
     text-decoration: none;
 }
 
-/* photo carousel */
+/* photo carousel formatting */
 
-  .carousel-inner img {
-      width: 600px;
-      max-height: 600px;
+#photos {
+    padding-left: 0px;
+    padding-right: 0px;
 }
