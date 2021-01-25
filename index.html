@@ -1,91 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- imported bootstrap 4, font-awesome 5, and individual stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ed Sheeran</title>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid no-gutters section-padding">
+        <!-- this part below contains the logo and navigation bar, with a grey top and bottom border -->
+        <div class="container-fluid no-gutters section-padding border-grey">
             <div class="row">
-                <a href="index.html" class="col logo">
+                <!-- black space on left of logo -->
+                <div class="col-1 bg-black">
+                </div>
+                <!-- logo that links to home page -->
+                <a href="index.html" class="col-10 logo">
                 </a>
+                <!-- black space on right of logo -->
+                <div class="col-1 bg-black">
+                </div>
             </div>
+            <!-- navigation bar starts here -->
             <div class="row navigation font-white font-navigation">
+                <!-- black space on left of navigation bar which hides when the screen gets smaller -->
                 <div class="col-md-2 d-none d-md-block bg-black">
                 </div>
+                <!-- navigation buttons with font-awesome icons, reduces from horizontal to vertical alignment when screen gets smaller -->
+                <!-- each hyperlink has a hover-effect through the main css stylesheet, that will glow orange when hovered over -->
                 <a href="index.html" class="col-md-2 col-sm-6 bg-black hover-glow">
                     <i class="fas fa-home space"></i> Home
                 </a>
                 <a href="music" class="col-md-2 col-sm-6 bg-black hover-glow">
                     <i class="fas fa-music space"></i> Music + Videos
                 </a>
-                <a href="https://www.ticketmaster.co.uk/ed-sheeran-tickets/artist/1560779" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <!-- external hyperlink that will open the official booking page, in a new tab -->
+                <a href="https://www.ticketmaster.co.uk/ed-sheeran-tickets/artist/1560779" target="_blank"
+                    class="col-md-2 col-sm-6 bg-black hover-glow">
                     <i class="fas fa-ticket-alt space"></i> Book Tickets
                 </a>
                 <a href="contact" class="col-md-2 col-sm-6 bg-black hover-glow">
                     <i class="fas fa-comments space"></i> Contact Us
                 </a>
+                <!-- black space on right of navigation bar which hides when the screen gets smaller -->
                 <div class="col-md-2 d-none d-md-block bg-black">
                 </div>
             </div>
         </div>
     </header>
     <section>
-        <div class="container-fluid no-gutters section-padding">
+        <!-- this part below contains the subheading text, and main body area -->
+        <div class="container-fluid no-gutters">
             <div class="row">
-                <div class="col-md-3 bg-grey font-heading">
-                    sub-title here
+                <!-- subheading which is on left side of the page, on small screen will take whole page width -->
+                <div class="col-md-2 col-12 bg-grey">
+                    <h1 class="font-subheading font-black">sub-title here </h1>
                 </div>
-                <div class="col-md-9 bg-white font-text">
-                    images here
+                <!-- main body which is on right side of the subheading, on small screen will take whole page width -->
+                <div class="col-md-10 col-12 bg-white">
+                    <p class="font-black font-text">text here</p>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container-fluid no-gutters section-padding">
+        <!-- this part contains all the social media links, with a grey top and bottom border -->
+        <div class="container-fluid no-gutters section-padding border-grey">
             <div class="row social-media bg-black font-white font-heading">
-                    <div class="col-md-3 d-none d-md-block bg-black">
-                    </div>
-                    <a class="col-md-1 hover-glow" target="_blank"
-                        href="https://www.facebook.com/pages/Ed-Sheeran/9189674485">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                    <a class="col-md-1 hover-glow" target="_blank" href="https://www.instagram.com/teddysphotos/">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                    <a class="col-md-1 hover-glow" target="_blank" href="https://twitter.com/edsheeran">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                    <a class="col-md-1 hover-glow target="_blank"
-                        href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V">
-                        <i class="fab fa-spotify" aria-hidden="true"></i>
-                        <span class="sr-only">Spotify</span>
-                    </a>
-                    <a class="col-md-1 hover-glow" target="_blank"
-                        href="https://music.apple.com/gb/artist/ed-sheeran/183313439">
-                        <i class="fab fa-apple" aria-hidden="true"></i>
-                        <span class="sr-only">Apple Store</span>
-                    </a>
-                    <a class="col-md-1 hover-glow" target="_blank" href="https://www.youtube.com/user/EdSheeran">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">Youtube</span>
-                    </a>
-                    <div class="col-md-3 d-none d-md-block bg-black">
-                    </div>
+                <!-- black space on left which hides when the screen gets smaller -->
+                <div class="col-md-3 d-none d-md-block bg-black">
+                </div>
+                <!-- navigation links with font-awesome icons, using the same orange glow hover effect as navigation bar -->
+                <!-- each link is external website, so opens in a new window to avoid confusion for user -->
+                <!-- the links show in 1 row of 6 on large screen, and reduces to 2 rows of 3 on small screen -->
+                <a class="col-md-1 col-4 hover-glow" target="_blank"
+                    href="https://www.facebook.com/pages/Ed-Sheeran/9189674485">
+                    <!-- each link is an icon using the <i> tag -->
+                    <!-- aria-hidden is enabled, so this doesn't confuse any Screen Readers -->
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <!-- this will display the name of website for Screen Readers only -->
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a class="col-md-1 col-4 hover-glow" target="_blank" href="https://www.instagram.com/teddysphotos/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a class="col-md-1 col-4 hover-glow" target="_blank" href="https://twitter.com/edsheeran">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a class="col-md-1 col-4 hover-glow" target="_blank"
+                    href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V">
+                    <i class="fab fa-spotify" aria-hidden="true"></i>
+                    <span class="sr-only">Spotify</span>
+                </a>
+                <a class="col-md-1 col-4 hover-glow" target="_blank"
+                    href="https://music.apple.com/gb/artist/ed-sheeran/183313439">
+                    <i class="fab fa-apple" aria-hidden="true"></i>
+                    <span class="sr-only">Apple Store</span>
+                </a>
+                <a class="col-md-1 col-4 hover-glow" target="_blank" href="https://www.youtube.com/user/EdSheeran">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">Youtube</span>
+                </a>
+                <!-- black space on left which hides when the screen gets smaller -->
+                <div class="col-md-3 d-none d-md-block bg-black">
                 </div>
             </div>
+        </div>
     </footer>
 </body>
 
