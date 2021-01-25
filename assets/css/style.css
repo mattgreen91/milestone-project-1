@@ -181,3 +181,17 @@ audio {
     }
 }
 
+/* */
+
+#contact-form {
+    padding: 20px;
+}
+
+/* submit button on form */
+
+button[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: grey;
+}
