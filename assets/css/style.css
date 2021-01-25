@@ -14,7 +14,7 @@
 .section-padding {
     margin-left: 0;
     margin-right: 0;
-    padding: 10px, 10px, 10px, 10px;
+    padding: 10px;
     background-color: black;
 }
 
@@ -52,9 +52,15 @@
     text-align: center;
 }
 
-.font-subheading {
+.font-heading {
     font-family: "Amatic SC", sans-serif;
     font-size: 42px;
+    text-align: center;
+}
+
+.font-subheading {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -97,7 +103,7 @@ h1, p, .navigation, .social-media {
 .social-media a {
     width: 50px;
     height: 60px;
-    padding: 0, 20px, 0, 20px;
+    padding: 0, 20px;
     margin: 0 auto;
     font-size: 30px;
     text-align: center;
@@ -129,3 +135,49 @@ h1, p, .navigation, .social-media {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+/* adding space between audio and video sections */
+
+#audio-section {
+    padding-bottom: 20px;
+}
+
+/* set the width and style of the audio controls */
+
+audio { 
+    width: 200px; 
+    box-shadow: 5px 5px 20px rgba(5, 5, 5, 0.4);
+    border-radius: 90px;
+}
+
+/* aligning audio controls to centre of screen */
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* adding space between each audio track */
+
+.track-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* bringing video section in from the edges */
+
+#video-section {
+    padding: 20px;
+    background-color: black;
+}
+
+/* setting the audio controls to reduce in size when the screen gets smaller */
+
+@media(min-width: 1024px) {
+    audio { 
+    width: 320px; 
+    }
+}
+

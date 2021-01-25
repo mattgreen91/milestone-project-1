@@ -7,10 +7,9 @@
     <!-- imported bootstrap 4, font-awesome 5, and individual stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
-    <title>Ed Sheeran</title>
+
+    <title>Ed Sheeran - Music + Videos</title>
 </head>
 
 <body>
@@ -31,69 +30,113 @@
             <!-- navigation bar starts here -->
             <div class="row navigation font-white font-navigation">
                 <!-- black space on left of navigation bar which hides when the screen gets smaller -->
-                <div class="col-md-2 d-none d-md-block bg-black">
+                <div class="col-lg-2 d-none d-lg-block bg-black">
                 </div>
                 <!-- navigation buttons with font-awesome icons, reduces from horizontal to vertical alignment when screen gets smaller -->
                 <!-- each hyperlink has a hover-effect through the main css stylesheet, that will glow orange when hovered over -->
-                <a href="index.html" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <a href="index.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-home space"></i> Home Page
                 </a>
-                <a href="music.html" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <a href="music.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-music space"></i> Music + Videos
                 </a>
                 <!-- external hyperlink that will open the official booking page, in a new tab -->
                 <a href="https://www.ticketmaster.co.uk/ed-sheeran-tickets/artist/1560779" target="_blank"
-                    class="col-md-2 col-sm-6 bg-black hover-glow">
+                    class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-ticket-alt space"></i> Book Tickets
                 </a>
-                <a href="contact.html" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <a href="contact.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-comments space"></i> Contact Us
                 </a>
                 <!-- black space on right of navigation bar which hides when the screen gets smaller -->
-                <div class="col-md-2 d-none d-md-block bg-black">
+                <div class="col-md-2 d-none d-lrg-block bg-black">
                 </div>
             </div>
         </div>
     </header>
     <section>
-        <!-- this part below contains the subheading text, and main body area -->
+        <!-- this part below contains the subheading text, music and video sections -->
         <div class="container-fluid no-gutters">
             <div class="row">
-                <!-- subheading which is on left side of the page, on small screen will take whole page width -->
-                <div class="col-md-2 col-12 bg-grey">
-                    <h1 class="font-subheading font-black">Music + Videos</h1>
+                <div class="col bg-grey">
+                    <h1 class="font-heading font-black">About Ed Sheeran</h1>
                 </div>
-                <!-- main body which is on right side of the subheading, on small screen will take whole page width -->
-                <div class="col-md-10 col-12 bg-white">
-                    <!-- first music song -->
-                    <div class="container-fluid no-gutters">
-                        <div class="row">
-                            <div class="col-12">
-                                <h6>Ed Sheeran</h6>
+            </div>
+            <div class="row" id="audio-section">
+                <div class="col bg-white">
+                    <div class="row">
+                        <!-- audio section divided into 3 columns for each song. When the screen gets smaller they position vertically -->
+                        <div class="col-md-4 col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="font-black font-subheading track-name">A Team</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- audio control with link to the local media file -->
+                                <div class="col audio-container">
+                                    <audio controls>
+                                        <source src="assets/music/a-team.mp3" type="audio/mp3">
+                                        <!-- alternate text in case browser does not support playing mp3s -->    
+                                        Your browser does not support playing MP3s
+                                    </audio>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h4>The A Team</h4>
+                        <div class="col-md-4 col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="font-black font-subheading track-name">Lego House</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col audio-container">
+                                    <audio controls>
+                                        <source src="assets/music/lego-house.mp3" type="audio/mp3">
+                                        Your browser does not support playing MP3s
+                                    </audio>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <audio controls>
-                                    <source src="assets/music/a-team.mp3" type="audio/mp3">
-                                    Your browser does not support playing MP3s on this website
-                                </audio>
+                        <div class="col-md-4 col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="font-black font-subheading track-name">Photograph</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <audio class="col-12" id="player" controls>
-                                <source src="assets/music/a-team.mp3" type="audio/mp3" />
-                                <source src="assets/music/lego-house.mp3" type="audio/ogg" />
-                            </audio>
+                            <div class="row">
+                                <div class="col audio-container">
+                                    <audio controls>
+                                        <source src="assets/music/photograph.mp3" type="audio/mp3">
+                                        Your browser does not support playing MP3s
+                                    </audio>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <p class="font-black font-text">text here</p>
                 </div>
+            </div>
+        </div>
+        <div class="col" id="video-section-container">
+            <div class="row" id="video-section">
+                <!-- video section which is 2 videos per row, reducing to 1 per row when screen gets smaller -->
+                <!-- alternate text in case browser does not support iFrames -->
+                <iframe class="video col-md-6 col-sm-12" width="600px" height="400px"
+                    src="https://www.youtube.com/embed/iKzRIweSBLA" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>Your browser does not support iFrames</iframe>
+                <iframe class="video col-md-6 col-sm-12" width="600px" height="400px"
+                    src="https://www.youtube.com/embed/K0ibBPhiaG0" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>Your browser does not support iFrames</iframe>
+                <iframe class="video col-md-6 col-sm-12" width="600px" height="400px"
+                    src="https://www.youtube.com/embed/87gWaABqGYs" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>Your browser does not support iFrames</iframe>
+                <iframe class="video col-md-6 col-sm-12" width="600px" height="400px"
+                    src="https://www.youtube.com/embed/JGwWNGJdvx8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>Your browser does not support iFrames</iframe>
             </div>
         </div>
     </section>
