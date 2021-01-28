@@ -52,6 +52,11 @@
     text-align: center;
 }
 
+.font-navigation-lrg {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+}
+
 .font-heading {
     font-family: "Amatic SC", sans-serif;
     font-size: 42px;
@@ -135,11 +140,49 @@ h1, p, .navigation, .social-media {
     text-decoration: none;
 }
 
+/* hyperlink colour that stays lit orange on active page */
+
+.nav-item a {
+    color: white !important;
+}
+
+.nav-item a:hover {
+    color: orange !important;
+}
+
+.active {
+    color: orange !important;
+}
+
+/* ul.nav a:hover { color: #fff !important; } */
+
 /* photo carousel formatting */
 
 #photos {
     padding-left: 0px;
     padding-right: 0px;
+    min-height: 360px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* photo carousel caption text formatting */
+.carousel-caption h2 {
+    color: white;
+    font-family: "Indie Flower", sans-serif;
+    background-color: rgba(5, 5, 5, 0.4);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* photo carousel container formatting */
+.carousel-caption {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    left: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 /* adding space between audio and video sections */
@@ -190,11 +233,23 @@ audio {
 /* */
 
 #contact-form {
-    padding: 20px;
-    width: 100%;
+    padding: 30px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* submit button on form */
+
+#contact-form div > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
 
 .button-send {
     color: white;
@@ -214,10 +269,10 @@ audio {
     color: black;
 }
 
-#contact-form > * {
-    margin: 10px;
+#plane-icon {
+    font-size: 20px;
+    padding-left: 2px;
+    vertical-align: center;
 }
 
-.test {
-    
-}
+

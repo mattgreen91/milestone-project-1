@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- this part below contains the logo and navigation bar, with a grey top and bottom border -->
-        <div class="container-fluid no-gutters section-padding border-grey">
+        <div class="container-fluid no-gutters section-padding border-grey" style="padding: 0px;">
             <div class="row">
                 <!-- black space on left of logo -->
                 <div class="col-1 bg-black">
@@ -34,10 +34,11 @@
                 </div>
                 <!-- navigation buttons with font-awesome icons, reduces from horizontal to vertical alignment when screen gets smaller -->
                 <!-- each hyperlink has a hover-effect through the main css stylesheet, that will glow orange when hovered over -->
+                <!-- the class "active" is used on the active pages, that will keep the icon orange so the user knows which page they are on -->
                 <a href="index.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-home space"></i> Home Page
                 </a>
-                <a href="music.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
+                <a href="music.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow active">
                     <i class="fas fa-music space"></i> Music + Videos
                 </a>
                 <!-- external hyperlink that will open the official booking page, in a new tab -->
@@ -75,11 +76,10 @@
                             <div class="row">
                                 <!-- audio control with link to the local media file -->
                                 <div class="col audio-container">
-                                    <audio controls>
-                                        <source src="assets/music/a-team.mp3" type="audio/mp3">
-                                        <!-- alternate text in case browser does not support playing mp3s -->    
-                                        Your browser does not support playing MP3s
-                                    </audio>
+                                    <iframe src="https://open.spotify.com/embed/album/7jfNbUImln4VF01QtMpe0q" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media">
+                                    <!-- alternate text in case browser does not support playing mp3s -->    
+                                        Your browser does not support iFrames
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
     </section>
     <footer>
         <!-- this part contains all the social media links, with a grey top and bottom border -->
-        <div class="container-fluid no-gutters section-padding border-grey">
+        <div class="container-fluid no-gutters border-grey">
             <div class="row social-media bg-black font-white font-heading">
                 <!-- black space on left which hides when the screen gets smaller -->
                 <div class="col-md-3 d-none d-md-block bg-black">

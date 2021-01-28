@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- this part below contains the logo and navigation bar, with a grey top and bottom border -->
-        <div class="container-fluid no-gutters section-padding border-grey">
+        <div class="container-fluid no-gutters section-padding border-grey" style="padding: 0px;">
             <div class="row">
                 <!-- black space on left of logo -->
                 <div class="col-1 bg-black">
@@ -33,6 +33,7 @@
                 </div>
                 <!-- navigation buttons with font-awesome icons, reduces from horizontal to vertical alignment when screen gets smaller -->
                 <!-- each hyperlink has a hover-effect through the main css stylesheet, that will glow orange when hovered over -->
+                <!-- the class "active" is used on the active pages, that will keep the icon orange so the user knows which page they are on -->
                 <a href="index.html" class="col-md-2 col-sm-6 bg-black hover-glow">
                     <i class="fas fa-home space"></i> Home Page
                 </a>
@@ -44,7 +45,7 @@
                     class="col-md-2 col-sm-6 bg-black hover-glow">
                     <i class="fas fa-ticket-alt space"></i> Book Tickets
                 </a>
-                <a href="contact.html" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <a href="contact.html" class="col-md-2 col-sm-6 bg-black hover-glow active">
                     <i class="fas fa-comments space"></i> Contact Us
                 </a>
                 <!-- black space on right of navigation bar which hides when the screen gets smaller -->
@@ -63,24 +64,37 @@
                 </div>
                 <!-- main body which is on right side of the subheading, on small screen will take whole page width -->
                 <div class="col-md-10 col-12 bg-white">
-                    <div class="row">
-                        <form id="contact-form">
-                            <input type="text" name="name" id="fullname" class="form-control font-form font-black"
-                                placeholder="Name" required />
-                            <input type="email" name="email" id="emailaddress" class="form-control font-form font-black"
-                                placeholder="Email" required />
-                            <textarea rows="6" name="message" id="message" class="form-control font-form font-black"
-                                placeholder="Your message..." required></textarea>
-                            <button type="submit" class="button-send font-subheading">Send Message</button>
-                        </form>
-                    </div>
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="name" class="font-subheading font-black">Name</label>
+                                <input type="text" name="name" id="name" class="form-control" required />
+                                <label for="emailaddress" class="font-subheading font-black">Email Address</label>
+                                <input type="email" name="email" id="emailaddress" class="form-control" required />
+                                <small id="emailHelp" class="form-text text-muted">We will never share your email with
+                                    anyone else</small>
+                                <label for="message" class="font-subheading font-black">Enter your message here</label>
+                                <textarea rows="6" name="message" id="message" class="form-control" required></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="subcribe">
+                                <label class="form-check-label" for="subscribe" style="font-size: 12px;">Check this box
+                                    if you would like to subscribe to our newsletters, and get the lastest information
+                                    on any future events</label>
+                                <div class="col-md-12 button-container">
+                                    <button type="submit" class="button-send font-subheading">Send Message <i
+                                            class="fa fa-paper-plane" id="plane-icon"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <!-- this part contains all the social media links, with a grey top and bottom border -->
-        <div class="container-fluid no-gutters section-padding border-grey">
+        <div class="container-fluid no-gutters border-grey">
             <div class="row social-media bg-black font-white font-heading">
                 <!-- black space on left which hides when the screen gets smaller -->
                 <div class="col-md-3 d-none d-md-block bg-black">
@@ -125,5 +139,5 @@
         </div>
     </footer>
 </body>
-<test></test>
+
 </html>
