@@ -49,12 +49,11 @@
 .font-navigation {
     font-family: "Amatic SC", sans-serif;
     font-size: 30px;
-    text-align: center;
 }
 
 .font-navigation-lrg {
     font-family: "Amatic SC", sans-serif;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .font-heading {
@@ -114,7 +113,7 @@ h1, p, .navigation, .social-media {
 .social-media a {
     width: 50px;
     height: 60px;
-    padding: 0px 20px;
+    padding: 0px 10px;
     margin: 0 auto;
     font-size: 30px;
     text-align: center;
@@ -275,4 +274,8 @@ audio {
     vertical-align: center;
 }
 
-
+.navigation > * {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}

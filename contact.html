@@ -8,12 +8,55 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ed Sheeran</title>
+    <!-- the below script is for the mobile nav bar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Ed Sheeran - Contact Us</title>
 </head>
 
 <body>
     <header>
-        <!-- this part below contains the logo and navigation bar, with a grey top and bottom border -->
+        <!-- navigation bar which is only visible only on XS screens such as mobile devices -->
+        <nav class="navbar navbar-dark bg-dark d-block d-sm-none">
+            <!-- navigation bar 'active page' name and icon, aligned to left -->
+            <div class="navbar-brand">
+                <h1 class="font-navigation-lrg"><i class="fas fa-comments space"></i> Contact Us</h1>
+            </div>
+            <!-- toggle button on right, which brings menu of links when pressed  -->
+            <div style="position: absolute; top: 25px; right: 15px;">
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                    data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false"
+                    aria-label="Toggle navigation"><span><i class="fas fa-bars"
+                            style="color: white; font-size: 42px;"></i></span></button>
+            </div>
+            <!-- menu which appears when pressing toggle button -->
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <!-- all links in the menu -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <!-- !important is used to override the default colour -->
+                        <!-- (current page) will show next to the active page name for screen readers only -->
+                        <a class="nav-link font-navigation" href="index.html" style="color: orange !important;"><i
+                                class="fas fa-home space"></i> Home Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-navigation" href="music.html"><i class="fas fa-music space"></i> Music +
+                            Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- the ticketmaster link below will open in a new tab so the user doesn't guest lost -->
+                        <a class="nav-link font-navigation"
+                            href="https://www.ticketmaster.co.uk/ed-sheeran-tickets/artist/1560779" target="_blank"><i
+                                class="fas fa-ticket-alt space"></i> Book Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-navigation" href="contact.html" style="color: orange !important;"><i class="fas fa-comments space"></i>
+                            Contact Us <span class="sr-only">(current page)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- this part below contains the logo, with a grey top and bottom border -->
         <div class="container-fluid no-gutters section-padding border-grey" style="padding: 0px;">
             <div class="row">
                 <!-- black space on left of logo -->
@@ -26,30 +69,30 @@
                 <div class="col-1 bg-black">
                 </div>
             </div>
-            <!-- navigation bar starts here -->
-            <div class="row navigation font-white font-navigation">
+            <!-- navigation bar starts here for all sizes except XS, which is hidden -->
+            <div class="row navigation font-white font-navigation d-none d-sm-block center">
                 <!-- black space on left of navigation bar which hides when the screen gets smaller -->
-                <div class="col-md-2 d-none d-md-block bg-black">
+                <div class="col-lg-2 d-none d-lg-block bg-black">
                 </div>
                 <!-- navigation buttons with font-awesome icons, reduces from horizontal to vertical alignment when screen gets smaller -->
                 <!-- each hyperlink has a hover-effect through the main css stylesheet, that will glow orange when hovered over -->
                 <!-- the class "active" is used on the active pages, that will keep the icon orange so the user knows which page they are on -->
-                <a href="index.html" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <a href="index.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-home space"></i> Home Page
                 </a>
-                <a href="music.html" class="col-md-2 col-sm-6 bg-black hover-glow">
+                <a href="music.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-music space"></i> Music + Videos
                 </a>
                 <!-- external hyperlink that will open the official booking page, in a new tab -->
                 <a href="https://www.ticketmaster.co.uk/ed-sheeran-tickets/artist/1560779" target="_blank"
-                    class="col-md-2 col-sm-6 bg-black hover-glow">
+                    class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow">
                     <i class="fas fa-ticket-alt space"></i> Book Tickets
                 </a>
-                <a href="contact.html" class="col-md-2 col-sm-6 bg-black hover-glow active">
+                <a href="contact.html" class="col-lg-2 col-md-3 col-sm-6 col-12 bg-black hover-glow active">
                     <i class="fas fa-comments space"></i> Contact Us
                 </a>
                 <!-- black space on right of navigation bar which hides when the screen gets smaller -->
-                <div class="col-md-2 d-none d-md-block bg-black">
+                <div class="col-md-2 d-none d-lrg-block bg-black">
                 </div>
             </div>
         </div>
@@ -59,11 +102,10 @@
         <div class="container-fluid no-gutters">
             <div class="row">
                 <!-- subheading which is on left side of the page, on small screen will take whole page width -->
-                <div class="col-md-2 col-12 bg-grey">
-                    <h1 class="font-heading font-black">Contact Us</h1>
+                <div class="d-none col-md-1 bg-grey">
                 </div>
                 <!-- main body which is on right side of the subheading, on small screen will take whole page width -->
-                <div class="col-md-10 col-12 bg-white">
+                <div class="col-md-10 col-sm-12 bg-white">
                     <form id="contact-form">
                         <div class="row">
                             <div class="col-md-12">
@@ -89,20 +131,22 @@
                         </div>
                     </form>
                 </div>
+                                <div class="d-none col-md-1 bg-grey">
+                </div>
             </div>
         </div>
     </section>
     <footer class="fixed-bottom">
         <!-- this part contains all the social media links, with a grey top and bottom border -->
         <div class="container-fluid no-gutters border-grey">
-            <div class="row social-media bg-black font-white font-heading">
+            <div class="row social-media bg-black font-white font-heading" style="padding: 5px 20px;">
                 <!-- black space on left which hides when the screen gets smaller -->
                 <div class="col-md-3 d-none d-md-block bg-black">
                 </div>
                 <!-- navigation links with font-awesome icons, using the same orange glow hover effect as navigation bar -->
                 <!-- each link is external website, so opens in a new window to avoid confusion for user -->
                 <!-- the links show in 1 row of 6 on large screen, and reduces to 2 rows of 3 on small screen -->
-                <a class="col-md-1 col-4 hover-glow" target="_blank"
+                <a class="col-md-1 col-2 hover-glow" target="_blank"
                     href="https://www.facebook.com/pages/Ed-Sheeran/9189674485">
                     <!-- each link is an icon using the <i> tag -->
                     <!-- aria-hidden is enabled, so this doesn't confuse any Screen Readers -->
@@ -110,25 +154,25 @@
                     <!-- this will display the name of website for Screen Readers only -->
                     <span class="sr-only">Facebook</span>
                 </a>
-                <a class="col-md-1 col-4 hover-glow" target="_blank" href="https://www.instagram.com/teddysphotos/">
+                <a class="col-md-1 col-2 hover-glow" target="_blank" href="https://www.instagram.com/teddysphotos/">
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                     <span class="sr-only">Instagram</span>
                 </a>
-                <a class="col-md-1 col-4 hover-glow" target="_blank" href="https://twitter.com/edsheeran">
+                <a class="col-md-1 col-2 hover-glow" target="_blank" href="https://twitter.com/edsheeran">
                     <i class="fab fa-twitter" aria-hidden="true"></i>
                     <span class="sr-only">Twitter</span>
                 </a>
-                <a class="col-md-1 col-4 hover-glow" target="_blank"
+                <a class="col-md-1 col-2 hover-glow" target="_blank"
                     href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V">
                     <i class="fab fa-spotify" aria-hidden="true"></i>
                     <span class="sr-only">Spotify</span>
                 </a>
-                <a class="col-md-1 col-4 hover-glow" target="_blank"
+                <a class="col-md-1 col-2 hover-glow" target="_blank"
                     href="https://music.apple.com/gb/artist/ed-sheeran/183313439">
                     <i class="fab fa-apple" aria-hidden="true"></i>
                     <span class="sr-only">Apple Store</span>
                 </a>
-                <a class="col-md-1 col-4 hover-glow" target="_blank" href="https://www.youtube.com/user/EdSheeran">
+                <a class="col-md-1 col-2 hover-glow" target="_blank" href="https://www.youtube.com/user/EdSheeran">
                     <i class="fab fa-youtube" aria-hidden="true"></i>
                     <span class="sr-only">Youtube</span>
                 </a>
