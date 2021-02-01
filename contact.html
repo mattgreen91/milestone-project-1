@@ -36,8 +36,8 @@
                     <li class="nav-item">
                         <!-- !important is used to override the default colour -->
                         <!-- (current page) will show next to the active page name for screen readers only -->
-                        <a class="nav-link font-navigation" href="index.html"><i
-                                class="fas fa-home space"></i> Home Page</a>
+                        <a class="nav-link font-navigation" href="index.html"><i class="fas fa-home space"></i> Home
+                            Page</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-navigation" href="music.html"><i class="fas fa-music space"></i> Music +
@@ -50,7 +50,8 @@
                                 class="fas fa-ticket-alt space"></i> Book Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-navigation" href="contact.html" style="color: orange !important;"><i class="fas fa-comments space"></i>
+                        <a class="nav-link font-navigation" href="contact.html" style="color: orange !important;"><i
+                                class="fas fa-comments space"></i>
                             Contact Us <span class="sr-only">(current page)</span></a>
                     </li>
                 </ul>
@@ -112,7 +113,13 @@
     <section>
         <!-- this part below contains the subheading text, and main body area -->
         <div class="container-fluid no-gutters">
-            <div class="row">
+                        <div class="row">
+                <div class="col bg-grey">
+                    <!-- subtitle to introduce spotify track section -->
+                    <h1 class="font-heading font-black">Get in touch with us</h1>
+                </div>
+            </div>
+                        <div class="row">   
                 <!-- main body which is on right side of the subheading, on small screen will take whole page width -->
                 <div class="col bg-white">
                     <form id="contact-form">
@@ -125,17 +132,26 @@
                                 <small id="emailHelp" class="form-text text-muted">We will never share your email with
                                     anyone else</small>
                                 <label for="message" class="font-subheading font-black">Enter your message here</label>
-                                <textarea rows="6" name="message" id="message" class="form-control" required></textarea>
+                                <textarea rows="4" name="message" id="message" class="form-control" required></textarea>
                             </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="subcribe">
-                                <label class="form-check-label" for="subscribe" style="font-size: 12px;">Check this box
-                                    if you would like to subscribe to our newsletters, and get the lastest information
-                                    on any future events</label>
-                                <div class="col button-container">
-                                    <button type="submit" class="button-send font-subheading">Send Message <i
-                                            class="fa fa-paper-plane" id="plane-icon"></i></button>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="subcribe" />
+                                    <label class="form-check-label" for="subscribe" style="font-size: 12px;">Check this
+                                        box
+                                        if you would like to subscribe to our newsletters, and get the lastest
+                                        information
+                                        on any future events
+                                    </label>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col button-container">
+                                <button type="submit" class="button-send font-subheading">Send Message <i
+                                        class="fa fa-paper-plane" id="plane-icon"></i></button>
                             </div>
                         </div>
                     </form>

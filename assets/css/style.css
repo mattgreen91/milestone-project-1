@@ -97,6 +97,14 @@ h1, p, .navigation, .social-media {
     padding-bottom: 10px;
 }
 
+/* center aligning all navigation items */
+
+.navigation > * {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* logo sizing and alignment */
 
 .logo {
@@ -153,9 +161,7 @@ h1, p, .navigation, .social-media {
     color: orange !important;
 }
 
-/* ul.nav a:hover { color: #fff !important; } */
-
-/* photo carousel formatting */
+/* photo carousel section padding and margin */
 
 #photos {
     padding-left: 0px;
@@ -165,16 +171,20 @@ h1, p, .navigation, .social-media {
     margin-right: 0px;
 }
 
-/* photo carousel caption text formatting */
-.carousel-caption h2 {
+/* photo carousel caption text */
+
+.carousel-caption h6 {
     color: white;
-    font-family: "Indie Flower", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
     background-color: rgba(5, 5, 5, 0.4);
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-/* photo carousel container formatting */
+
+/* photo carousel container alignment */
+
 .carousel-caption {
     max-width: 100%;
     width: 100%;
@@ -190,28 +200,17 @@ h1, p, .navigation, .social-media {
     padding-bottom: 20px;
 }
 
-/* set the width and style of the audio controls */
-
-audio { 
-    width: 200px; 
-    box-shadow: 5px 5px 20px rgba(5, 5, 5, 0.4);
-    border-radius: 90px;
-}
-
-/* aligning audio controls to centre of screen */
-
-.audio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-}
-
 /* adding space between each audio track */
 
 .track-name {
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+/* aligning the spotify controls into centre of columns  */
+
+.spotify {
+    text-align: center;
 }
 
 /* bringing video section in from the edges */
@@ -221,7 +220,7 @@ audio {
     background-color: black;
 }
 
-/* setting the audio controls to reduce in size when the screen gets smaller */
+/* setting the audio controls to increase in size when the screen gets larger */
 
 @media(min-width: 1024px) {
     audio { 
@@ -229,11 +228,11 @@ audio {
     }
 }
 
-/* */
+/* contact form size and padding */
 
 #contact-form {
-    padding: 30px;
-    width: 50%;
+    padding: 20px 50px;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -263,10 +262,7 @@ audio {
     -o-transition: all 0.2s ease-in-out; 
 }
 
-.button-send:hover {
-    background-color: orange;
-    color: black;
-}
+/* icon on the submit button */
 
 #plane-icon {
     font-size: 20px;
@@ -274,8 +270,17 @@ audio {
     vertical-align: center;
 }
 
-.navigation > * {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
+/* submit button hover colours */
+
+.button-send:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* setting the contact form to decrease in width when the screen gets larger */
+
+@media(min-width: 1024px) {
+    #contact-form { 
+        max-width: 50%;
+    }
 }

@@ -24,10 +24,9 @@
             </div>
             <!-- toggle button on right, which brings menu of links when pressed  -->
             <div style="position: absolute; top: 25px; right: 15px;">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false"
-                    aria-label="Toggle navigation"><span><i class="fas fa-bars"
-                            style="color: white; font-size: 42px;"></i></span></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"
+                    aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation"><span><i
+                            class="fas fa-bars" style="color: white; font-size: 42px;"></i></span></button>
             </div>
             <!-- menu which appears when pressing toggle button -->
             <div class="collapse navbar-collapse" id="nav-menu">
@@ -36,11 +35,12 @@
                     <li class="nav-item">
                         <!-- !important is used to override the default colour -->
                         <!-- (current page) will show next to the active page name for screen readers only -->
-                        <a class="nav-link font-navigation" href="index.html"><i
-                                class="fas fa-home space"></i> Home Page</a>
+                        <a class="nav-link font-navigation" href="index.html"><i class="fas fa-home space"></i> Home
+                            Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-navigation" href="music.html" style="color: orange !important;"><i class="fas fa-music space"></i> Music +
+                        <a class="nav-link font-navigation" href="music.html" style="color: orange !important;"><i
+                                class="fas fa-music space"></i> Music +
                             Videos <span class="sr-only">(current page)</span></a>
                     </li>
                     <li class="nav-item">
@@ -114,7 +114,8 @@
         <div class="container-fluid no-gutters">
             <div class="row">
                 <div class="col bg-grey">
-                    <h1 class="font-heading font-black">Music + Video</h1>
+                    <!-- subtitle to introduce spotify track section -->
+                    <h1 class="font-heading font-black">Listen to Ed's Song Tracks</h1>
                 </div>
             </div>
             <div class="row" id="audio-section">
@@ -129,8 +130,8 @@
                             </div>
                             <div class="row">
                                 <!-- audio control with link to the local media file -->
-                                <div class="col">
-                                    <iframe src="https://open.spotify.com/embed/album/7jfNbUImln4VF01QtMpe0q"
+                                <div class="col spotify">
+                                    <iframe src="https://open.spotify.com/embed/track/3PB8iSyxMHfyENnye0v7Sl"
                                         width="250" height="80" frameborder="0" allowtransparency="true"
                                         allow="encrypted-media">
                                         <!-- alternate text in case browser does not support playing mp3s -->
@@ -146,8 +147,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <iframe src="https://open.spotify.com/embed/album/02pi98kE0nra0yBqCStzbC"
+                                <div class="col spotify">
+                                    <iframe src="https://open.spotify.com/embed/track/5ubHAQtKuFfiG4FXfLP804"
                                         width="250" height="80" frameborder="0" allowtransparency="true"
                                         allow="encrypted-media">
                                         Your browser does not support iFrames
@@ -162,15 +163,32 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <iframe src="https://open.spotify.com/embed/album/1xn54DMo2qIqBuMqHtUsFd"
+                                <div class="col spotify">
+                                    <iframe src="https://open.spotify.com/embed/track/5tIJb0C5rIbiDijHl41byE"
                                         width="250" height="80" frameborder="0" allowtransparency="true"
                                         allow="encrypted-media">
-                                        Your browser does not support iFrames</iframe>
+                                        Your browser does not support iFrames
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg-white">
+                    <!-- text to inform user to log into spotify for the full track -->
+                    <p class="font-black font-text" style="padding: 10px;">
+                        If you want to listen to the full track, then
+                        click on the spotify logo in the corner of the track.
+                        You will need to sign in or register a new spotify account.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg-grey">
+                    <!-- subtitle to introduce youtube video section -->
+                    <h1 class="font-heading font-black">Watch Ed's Official Music Videos</h1>
                 </div>
             </div>
         </div>
