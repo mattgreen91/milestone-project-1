@@ -1,6 +1,6 @@
 <img src="https://github.com/mattgreen91/my-full-template/blob/master/logo.png" width="200" style="margin: 0;">
 
-# Your Project's Name 
+# Milestone Project 1 - Ed Sheeran
 
 One or two paragraphs providing an overview of your project.
 
@@ -77,10 +77,12 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The information about Ed Sheeran was sourced from the website [The Famous People](https://www.thefamouspeople.com/profiles/ed-sheeran-29882.php)
+- All social links go to his official social media accounts
 
 ### Media
-- The photos used in this site were obtained from ...
+- The black logo was taken from [Pinterest](https://www.pinterest.co.uk/pin/718183471806386083/)
+- All photos in the photo carousel have source URLs written as captions
 
 ### Acknowledgements
 
