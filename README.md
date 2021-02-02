@@ -1,10 +1,10 @@
-<img src="https://github.com/mattgreen91/my-full-template/blob/master/logo.png" width="200" style="margin: 0;">
+<img src="assets/readme-files/logo.png" width="200" style="margin: 0;">
 
 # Milestone Project 1 - Ed Sheeran
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+My first project was to create a Static Front-End website.  
+I have chosen to design a website for Ed Sheeran fans, which displays information about him, some songs and videos, a link to book tickets to his events,
+links to his social media accounts, and a contact form to ask any questions and subscribe to newsletters.
  
 ## UX
  
@@ -91,3 +91,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 _italic text_
 
 `highlighted text`
+
+<img src="assets/readme-files/homepage.png" width="1000" style="margin: 0;">
+
+<img src="assets/readme-files/pages2-3.png" width="1000" style="margin: 0;">
