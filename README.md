@@ -17,12 +17,12 @@ The website has been designed to be fully functional on all devices, including a
  
 ## Contents Page
 
-* [1. User Experience (UX)](#1.-user-experience)
-* [2. Features](#2.-features)
-* [3. Technologies Used](#3.-technologies-used)
-* [4. Testing](#4.-testing)
-* [5. Deployment](#5.-deployment)
-* [6. Credits](#6.-credits)
+* [1. User Experience (UX)](#1-user-experience)
+* [2. Features](#2-features)
+* [3. Technologies Used](#3-technologies-used)
+* [4. Testing](#4-testing)
+* [5. Deployment](#5-deployment)
+* [6. Credits](#6-credits)
 
 ## 1. User Experience (UX)
  
