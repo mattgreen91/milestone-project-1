@@ -102,6 +102,8 @@ In addition, you should mention in this section how your project looks and works
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
+[Issues found during creating and testing](assets/readme-files/issues-experienced.pdf)
+
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 <img src="assets/readme-files/testing-1.png" width="1000" style="margin: 0;">
