@@ -17,7 +17,7 @@ The website has been designed to be fully functional on all devices, including a
  
 ## Contents Page
 
-* [1. UX (User Experience)](#1-ux---user-experience)
+* [1. UX - User Experience](#1-ux---user-experience)
 * [2. Features](#2-features)
 * [3. Technologies Used](#3-technologies-used)
 * [4. Testing](#4-testing)
