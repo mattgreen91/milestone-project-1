@@ -7,9 +7,11 @@ My first project was to create a Static Front-End website.
 I have chosen to design a website for Ed Sheeran fans, which displays information about him, some songs and videos, a link to book tickets to his events,
 links to his social media accounts, and a contact form to ask any questions and subscribe to newsletters.  
 
-The website is created using HTML5, CSS, Bootstrap 4 Framework, and CDN Libraries.
+ _**You can access the completed website by [clicking here](https://mattgreen91.github.io/milestone-project-1/index.html) :rocket:**_
 
-The website is designed to be fully functional on all devices, including a drop-down mobile navigation menu for small devices.
+The website was created using HTML5, CSS, Bootstrap 4 Framework, and CDN Libraries.
+
+The website has been designed to be fully functional on all devices, including a drop-down mobile navigation menu for small devices.
 
 <img src="assets/readme-files/example-1.png" width="800" style="margin: 0;"> <img src="assets/readme-files/example-2.png" width="200" style="margin: 0;"> <img src="assets/readme-files/example-3.png" width="600" style="margin: 0;">
  
