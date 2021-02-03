@@ -17,14 +17,14 @@ The website has been designed to be fully functional on all devices, including a
  
 ## Contents Page
 
-* [1. User Experience (UX)](#1-user-experience)
+* [1. UX (User Experience)](#1-ux---user-experience)
 * [2. Features](#2-features)
 * [3. Technologies Used](#3-technologies-used)
 * [4. Testing](#4-testing)
 * [5. Deployment](#5-deployment)
 * [6. Credits](#6-credits)
 
-## 1. User Experience (UX)
+## 1. UX - User Experience 
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -41,7 +41,13 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 <img src="assets/readme-files/pages2-3.png" width="1000" style="margin: 0;">
 
+
+
 <img src="assets/readme-files/design-bootstrap.png" width="1000" style="margin: 0;">
+
+<img src="assets/readme-files/design-bootstrap-2.png" width="800" style="margin: 0;"> 
+
+<img src="assets/readme-files/design-bootstrap-3.png" width="800" style="margin: 0;">
 
 ## 2. Features
 
