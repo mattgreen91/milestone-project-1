@@ -11,7 +11,7 @@ The website is created using HTML5, CSS, Bootstrap 4 Framework, and CDN Librarie
 
 The website is designed to be fully functional on all devices, including a drop-down mobile navigation menu for small devices.
 
-<img src="assets/readme-files/example-1.png" width="800" style="margin: 0;">  <img src="assets/readme-files/example-2.png" width="240" style="margin: 0;">
+<img src="assets/readme-files/example-1.png" width="800" style="margin: 0;"> <img src="assets/readme-files/example-2.png" width="200" style="margin: 0;"> <img src="assets/readme-files/example-3.png" width="600" style="margin: 0;">
  
 ## Contents Page
 
