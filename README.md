@@ -118,7 +118,7 @@ In order to construct this project, the below technologies were used:
 - [HTML5 Validator](https://validator.w3.org)
     - The project uses **HTML5 Validator** to check all the HTML5 code is working, without any errors.
 - [CSS3 Validator](https://jigsaw.w3.org/css-validator)
-    - The project uses **Responsive Viewer Extension - Chrome** to check all the CSS3 code is working, without any errors.
+    - The project uses **CSS3 Validator** to check all the CSS3 code is working, without any errors.
 
 
 ## 4. Testing
